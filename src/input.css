@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Quicksand:wght@400;500&display=swap');
+
+* {
+    margin: auto;
+}
+
+h1, h2, li {
+    font-family: 'Arvo', serif;
+    font-size: 32px;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    color: #402E32;
+}
+
