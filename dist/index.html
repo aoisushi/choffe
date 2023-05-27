@@ -18,34 +18,34 @@
         <header>
             <div>
                 <!-- Hamburger Menu -->
-                <div class="fixed top-[40px] right-[100px] text-[40px] cursor-pointer flex justify-evenly">
+                <div class="fixed top-[40px] right-[35px] text-[40px] cursor-pointer flex justify-evenly">
                     <img src="../images/Choffe logo_hor.svg" alt="Choffe's Logo" width="150">
                     <ion-icon id="burger" size="large" name="menu" onclick="Open(this)"></ion-icon>
                 </div>
                 <!-- Main menu -->
-                <div class="fixed bg-[#FFDD85]/90 w-0 h-[100vh] text-white flex justify-center items-center text-[30px] tracking-[3px] overflow-hidden origin-left duration-500 z-50" id="hamm">
+                <div class="fixed bg-[#FFDD85]/100 w-0 h-[100vh] text-white flex justify-center items-center text-[30px] tracking-[3px] overflow-hidden origin-left duration-500 z-50" id="hamm">
                     <nav>
                         <div class="flex justify-center mb-[33px]">
                             <a href="#home"><img src="../images/Choffe logo_hor.svg" alt="Choffe's logo" width="150"></a>
                         </div>
                         <ul id="menu" class="text-center ">
-                            <li class="mb-[15px] hover:text-[#E7980C] duration-500 hover:translate-y-[-5px] "><a class="nav-link" href="#home">Home</a></li>
-                            <li class="mb-[15px] hover:text-[#E7980C] duration-500 hover:translate-y-[-5px] "><a class="nav-link" href="#about">About</a></li>
-                            <li class="mb-[15px] hover:text-[#E7980C] duration-500 hover:translate-y-[-5px] "><a class="nav-link" href="#menu">Menu</a></li>
-                            <li class="mb-[15px] hover:text-[#E7980C] duration-500 hover:translate-y-[-5px] "><a class="nav-link" href="#shop">Shop</a></li>
-                            <li class="mb-[15px] hover:text-[#E7980C] duration-500 hover:translate-y-[-5px] "><a class="nav-link" href="#contact">Contact</a></li>
+                            <li class="mb-[15px] hover:text-[#E7980C] duration-500 hover:translate-y-[-5px] "><a class="nav-link" onclick="Close(this)"  href="#home">Home</a></li>
+                            <li class="mb-[15px] hover:text-[#E7980C] duration-500 hover:translate-y-[-5px] "><a class="nav-link" onclick="Close(this)"  href="#about">About</a></li>
+                            <li class="mb-[15px] hover:text-[#E7980C] duration-500 hover:translate-y-[-5px] "><a class="nav-link" onclick="Close(this)"  href="#food">Menu</a></li>
+                            <li class="mb-[15px] hover:text-[#E7980C] duration-500 hover:translate-y-[-5px] "><a class="nav-link" onclick="Close(this)"  href="#shop">Shop</a></li>
+                            <li class="mb-[15px] hover:text-[#E7980C] duration-500 hover:translate-y-[-5px] "><a class="nav-link" onclick="Close(this)"  href="#contact">Contact</a></li>
                         </ul>
                     </nav>
 
                     <!-- Close Button -->
-                    <div class="text-white absolute top-[40px] right-[100px] text-[40px] cursor-pointer " onclick="Close(this)">
+                    <div class="text-white absolute top-[40px] right-[35px] text-[40px] cursor-pointer " onclick="Close(this)">
                         <ion-icon size="large" name="close"></ion-icon>
                     </div>
                 </div>
                 
             </div>
         </header>
-        <h1 class="text-white text-4xl relative top-[500px] text-center ">
+        <h1 class="text-white text-3xl md:text-5xl relative top-[500px] text-center ">
             We offer Fresh Waffle and coffee!
         </h1>
     </div>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="text-center">
                     <h2 class="text-4xl my-8">About<br>Choffe</h2>
-                    <p class="flex justify-center m-auto w-80 font-medium">
+                    <p class="flex justify-center m-auto w-80 font-medium md:w-[500px] md:text-xl">
                         Choffe is a fictional coffee shop that pretended locating in Vancouver. The name Choffe stands for two of words - “Choco” and “Coffee”. We are passionate about serving the best waffles and coffee in town, using only the finest ingredients and brewing techniques. Our waffles are made fresh daily and can be customized with a variety of toppings to suit your taste buds. 
                     </p>
                 </div>
@@ -73,24 +73,100 @@
 
             <div class="bg-yellow h-10 my-16"></div>
 
-
             <!-- ======= Menu ======= -->
-            <section id="menu">
+            <section id="food">
                 <div class="text-center">
                     <h2 class="text-4xl my-14">Menu</h2>
                 </div>
 
                 <!-- Waffle -->
-                <div>
-                    <img class="w-52 h-52 rounded-full object-cover my-8" src="../images/waffle1.png" alt="waffle picture">
-                    <p class="text-center font-heading text-xl">🧇 Mango Waffle</p>
+                <div class="text-center">
+                    <h3 class="text-4xl my-14">Waffle</h3>
                 </div>
 
-                <!-- Coffee -->
-                <div>
-                    <img class="w-52 h-52 rounded-full object-cover my-8" src="../images/coffee-02.png" alt="coffee picture">
-                    <p class="text-center font-heading text-xl">☕ Black</p>
+                <div class="grid grid-cols-12 gap-4 md:w-[600px] lg:w-[1000px]">
+
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/waffle1.jpg" alt="waffle picture">
+                        <p class="text-center font-heading text-xl">🧇 Mango Waffle</p>
+                    </div>
+
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/waffle2.jpg" alt="waffle picture">
+                        <p class="text-center font-heading text-xl">🧇 Mango Waffle</p>
+                    </div>
+
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/waffle3.jpg" alt="waffle picture">
+                        <p class="text-center font-heading text-xl">🧇 Mango Waffle</p>
+                    </div>
+                    
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/waffle4.jpeg" alt="waffle picture">
+                        <p class="text-center font-heading text-xl">🧇 Mango Waffle</p>
+                    </div>
+
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/waffle5.jpeg" alt="waffle picture">
+                        <p class="text-center font-heading text-xl">🧇 Berries Waffle</p>
+                    </div>
+
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4"> 
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/waffle6.jpeg" alt="waffle picture">
+                        <p class="text-center font-heading text-xl">🧇 Blueberries Waffle</p>
+                    </div>
+
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4"> 
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/waffle7.jpeg" alt="waffle picture">
+                        <p class="text-center font-heading text-xl">🧇 Blueberries Waffle</p>
+                    </div>
+
                 </div>
+                
+                <!-- Coffee -->
+                <div class="text-center">
+                    <h3 class="text-4xl my-14">Coffee</h3>
+                </div>
+                <div class="grid grid-cols-12 gap-4 md:w-[600px] lg:w-[1000px]">
+                    
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/coffee-02.png" alt="coffee picture">
+                        <p class="text-center font-heading text-xl">☕ Black</p>
+                    </div>
+
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/coffee-02.png" alt="coffee picture">
+                        <p class="text-center font-heading text-xl">☕ Americano</p>
+                    </div>
+
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/coffee-02.png" alt="coffee picture">
+                        <p class="text-center font-heading text-xl">☕ Long Black</p>
+                    </div>
+
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/coffee-03.png" alt="coffee picture">
+                        <p class="text-center font-heading text-xl">☕ Flat White</p>
+                    </div>
+
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/coffee-03.png" alt="coffee picture">
+                        <p class="text-center font-heading text-xl">☕ Latte</p>
+                    </div>
+
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4"> 
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/coffee-04.png" alt="coffee picture">
+                        <p class="text-center font-heading text-xl">☕ Cappuccino</p>
+                    </div>
+
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4"> 
+                        <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/coffee-04.png" alt="coffee picture">
+                        <p class="text-center font-heading text-xl">☕ Mocha</p>
+                    </div>
+
+
+                </div>
+            
             </section>
             
             <!-- ======= divied line ======= -->
@@ -102,30 +178,40 @@
                     <h2 class="text-4xl my-14">Shop</h2>
                 </div>
 
-                <!-- Coffee Bean -->
-                <div>
-                    <img class="w-52 h-52 rounded-full object-cover my-8" src="../images/coffeebeans.png" alt="coffee beans picture">
-                    <p class="text-center font-heading text-xl">☕ Coffee Bean</p>
-                </div>
+                <div class="grid grid-cols-12 gap-4 md:w-[600px] lg:w-[1000px]">
+                    <!-- Coffee Bean -->
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <a href="#">
+                            <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/coffeebeans.png" alt="coffee beans picture">
+                            <p class="text-center font-heading text-xl">☕ Coffee Bean</p>
+                        </a>
+                    </div>
 
-                <!-- Products -->
-                <div>
-                    <img class="w-52 h-52 rounded-full object-cover my-8" src="../images/coffee_mock up.jpg" alt="coffee beans picture">
-                    <p class="text-center font-heading text-xl">☕ Product</p>
-                </div>
+                    <!-- Products -->
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <a href="#">
+                            <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-outc" src="../images/coffee_mock up.jpg" alt="coffee beans picture">
+                            <p class="text-center font-heading text-xl">☕ Product</p>
+                        </a>
+                    </div>
 
-                <!-- Products -->
-                <div>
-                    <img class="w-52 h-52 rounded-full object-cover my-8" src="../images/totebag.jpg" alt="coffee beans picture">
-                    <p class="text-center font-heading text-xl">☕ Tote bag</p>
-                </div>
+                    <!-- Products -->
+                    <div class="col-[auto_/_span_12] md:col-span-6 lg:col-span-4">
+                        <a href="#">
+                            <img class="w-[280px] h-[280px] rounded-full object-cover my-8 hover:opacity-40 transition duration-200 ease-in-out" src="../images/totebag.jpg" alt="coffee beans picture">
+                            <p class="text-center font-heading text-xl">☕ Tote bag</p>
+                        </a>
+                    </div>
 
+                </div>
+  
             </section>
 
              <!-- ======= divied line ======= -->
              <div class="bg-yellow h-10 my-16"></div>
 
             <!-- ======= Contact ======= -->
+            
             <section id="contact">
                 <div class="text-center">
                     <h2 class="text-4xl my-14">Contact</h2>
@@ -138,10 +224,58 @@
                 </div>
 
                 <div class="text-center mb-16">
-                    <h3 class="text-2xl">Address</h3>
+                    <h3 class="text-2xl">Location</h3>
                     <p class="text-lg">555 Seymour St, <br>
                         Vancouver, BC
                     </p>
+                </div>
+
+
+                <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-[380px] overflow-hidden rounded-lg md:h-[600px]">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <img src="/images/background_image2.jpeg" class="absolute block object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/images/background_image3.jpg" class="absolute block object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/images/background_image4.jpeg" class="absolute block object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/images/background_image5.jpeg" class="absolute block object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/images/background_image6.jpeg" class="absolute block object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-orange-50/30 dark:bg-orange-800/30 group-hover:bg-white/50 dark:group-hover:bg-orange-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-orange-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-orange-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-orange-800/30 group-hover:bg-white/50 dark:group-hover:bg-orange-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-orange-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-orange-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
                 </div>
                 
 
@@ -165,6 +299,7 @@
     let ham = document.getElementById('hamm');
     // const hamburger = document.querySelector('#burger');
     const navMenu = document.querySelector('#menu');
+    // const link = document.querySelector('nav-link');
 
     function Open(){
         ham.classList.add('w-[100%]')
@@ -176,9 +311,11 @@
 
     document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", ()=> {
     navMenu.classList.remove("active");
+    // link.classList.remove("active");
     }))
 
 </script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 </html>
